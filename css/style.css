@@ -1,0 +1,331 @@
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  border: 1.5px solid #2C2830;
+  background: #FFFFFF;
+}
+
+/* dm-serif-display-regular - latin */
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/dm-serif-display-v10-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/dm-serif-display-v10-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/dm-serif-display-v10-latin-regular.woff2") format("woff2"), url("../fonts/dm-serif-display-v10-latin-regular.woff") format("woff"), url("../fonts/dm-serif-display-v10-latin-regular.ttf") format("truetype"), url("../fonts/dm-serif-display-v10-latin-regular.svg#DMSerifDisplay") format("svg"); /* Legacy iOS */
+}
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0 auto;
+  background: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1110px;
+  height: 30px;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+}
+.header__item {
+  list-style: none;
+  padding-left: 40px;
+  height: 15px;
+  margin-top: 34px;
+  margin-bottom: 31px;
+  margin-left: 25px;
+}
+.header__button {
+  background: #FFFFFF;
+  border: 1.5px solid #2C2830;
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    width: auto;
+    flex-direction: column;
+  }
+  .header__list {
+    display: none;
+  }
+  .header__nav {
+    height: auto;
+    justify-content: center;
+  }
+}
+.hero {
+  background: #2D2641;
+  height: 600px;
+}
+.hero__main {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__left {
+  height: 1px;
+  left: 165px;
+  top: 185px;
+  width: 150px;
+}
+.hero__title {
+  text-align: left;
+  width: 540px;
+  height: 140px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  font-family: "DM Serif Display";
+  color: #FFFFFF;
+}
+.hero__about {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  font-family: "Karla";
+  width: 540px;
+}
+.hero__right {
+  width: 540px;
+  height: 650px;
+  margin-top: 85px;
+  background-image: url("./Image/hero__img.jpg");
+  height: 600px;
+}
+.hero__button {
+  border: 1.5px solid FFFFFF;
+  background: #2D2641;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 365px) {
+  .hero {
+    width: 100%;
+  }
+  .hero__main {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+  .hero__left {
+    flex-direction: row;
+    width: 50%;
+  }
+  .hero__main {
+    height: auto;
+    justify-content: center;
+  }
+  .hero__right {
+    flex-direction: column;
+    width: 50%;
+  }
+}
+.were {
+  background: #F2F2F2;
+}
+.were__main {
+  display: contents;
+  justify-content: left;
+  height: 474px;
+  left: 165px;
+  top: 985px;
+  width: 1110px;
+  margin-top: 500px;
+}
+.were__title {
+  height: 64px;
+  left: 165px;
+  top: 1049px;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #2C2830;
+  width: 717px;
+}
+.were__list {
+  display: flex;
+  justify-content: space-between;
+}
+.were__item {
+  list-style: none;
+  justify-content: left;
+}
+.were__about {
+  width: 350px;
+  height: 78px;
+}
+.were__aboutt {
+  right: 0%;
+  top: 0%;
+  bottom: 71.21%;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.388889px;
+  color: #2C2830;
+  left: 0%;
+}
+
+@media screen and (max-width: 375px) {
+  .were {
+    width: auto;
+    flex-direction: column;
+  }
+  .were__main {
+    height: auto;
+    justify-content: center;
+  }
+  .were__list {
+    display: block;
+  }
+  .were__item {
+    width: 100%;
+  }
+}
+.find {
+  margin: 0 auto;
+}
+.find__main {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../images/backgraund.svg);
+  width: 1110px;
+  height: 250px;
+  border: 1px solid;
+  align-items: center;
+  background-color: #2D2641;
+}
+.find__title {
+  left: 7.3%;
+  right: 49.91%;
+  top: calc(50% - 56px);
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.777778px;
+  color: #FFFFFF;
+  height: 112px;
+  width: 475px;
+  height: 112px;
+}
+
+@media screen and (max-width: 375px) {
+  .find {
+    width: auto;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .find__main {
+    display: block;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+.footer {
+  background-image: url(../image/foter_logo.svg);
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__icon {
+  display: flex;
+}
+.footer__iconn {
+  list-style: none;
+  margin-left: 20px;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__item {
+  list-style: none;
+  justify-content: left;
+  margin-right: 40px;
+}
+.footer__ITEM {
+  list-style: none;
+  justify-content: left;
+  left: 0%;
+  right: 0%;
+  top: calc(50% - 7.5px - 21px);
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  color: #2D2641;
+  height: 15px;
+}
+.footer__LIST {
+  justify-content: left;
+}
+.footer__item-title {
+  left: 0%;
+  right: 0%;
+  top: calc(50% - 7.5px - 72px);
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  color: #837D88;
+  height: 15px;
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    width: auto;
+    flex-direction: column;
+  }
+  .footer__nav {
+    height: auto;
+    justify-content: center;
+    display: block;
+  }
+  .footer__list {
+    display: block;
+  }
+  .footer__item {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

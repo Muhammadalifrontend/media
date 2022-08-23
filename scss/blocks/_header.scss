@@ -1,0 +1,51 @@
+.header{
+    margin: 0 auto;
+    background: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    
+    &__nav{
+       display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        width: 1110px;
+        height: 30px;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        list-style: none;
+       padding-left: 40px;
+        height: 15px;
+        margin-top: 34px;
+        margin-bottom: 31px;
+        margin-left: 25px;
+    }
+    &__button{
+        background: #FFFFFF;
+border: 1.5px solid #2C2830;
+    }
+  
+}
+    @media screen and (max-width: 375px) {
+       .header{
+        width: auto;
+        flex-direction: column;
+
+       }
+      .header__list{
+        display: none;
+}
+.header__nav{
+    height: auto;
+    justify-content: center;
+   }
+       }
+     

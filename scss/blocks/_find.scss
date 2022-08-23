@@ -1,0 +1,47 @@
+.find{
+    margin: 0 auto;
+  
+    &__main{
+        display: flex;
+        justify-content: space-around;
+        background-image: url(../images/backgraund.svg);
+        width: 1110px;
+        height: 250px;
+        border: 1px solid;
+        align-items: center;
+        background-color: #2D2641;
+
+      
+    }
+    &__title{
+        left: 7.3%;
+        right: 49.91%;
+        top: calc(50% - 112px/2);
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -0.777778px;
+        color: #FFFFFF;
+        height: 112px;
+        width: 475px;
+        height: 112px;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .find{
+     width: auto;
+     flex-direction: column;
+     margin: 0 auto;
+
+    }
+   .find__main{
+     display: block;
+     height: auto;
+     justify-content: center;
+     margin: 0 auto;
+
+}
+    }

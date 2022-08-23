@@ -1,0 +1,77 @@
+.were{
+    background: #F2F2F2;
+    
+    &__main{
+        display: contents;
+        justify-content: left;
+        height: 474px;
+        left: 165px;
+        top: 985px;
+        width: 1110px;
+        margin-top: 500px;
+
+    }
+    &__title{
+        height: 64px;
+        left: 165px;
+        top: 1049px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 64px;
+        letter-spacing: -1px;
+        color: #2C2830;
+        width: 717px;
+       
+
+
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__item{
+        list-style: none;
+        justify-content: left;
+    }
+    &__about{
+        width: 350px;
+        height: 78px;
+    }
+    &__aboutt{
+        right: 0%;
+        top: 0%;
+        bottom: 71.21%;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: -0.388889px;
+        color: #2C2830;
+        left: 0%;
+        
+    }
+}
+
+@media screen and (max-width: 375px) {
+   .were{
+    width: auto;
+    flex-direction: column;
+
+   }
+   .were__main{
+    height: auto;
+    justify-content: center;
+   }
+  .were__list{
+    display:block;
+  
+}
+.were__item{
+    width: 100%;
+}
+   }
+ 
